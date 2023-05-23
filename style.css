@@ -1,0 +1,178 @@
+body
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 10vh;
+    
+    
+    background:linear-gradient(to right bottom,rgb(63, 49, 4),rgb(19, 5, 46),rgb(71, 48, 5));
+}
+.hero
+{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    padding:0;
+
+
+}
+.hero video 
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:-10.8%;
+    left:0;
+   
+
+}
+
+
+.text-box
+{
+    position:absolute;
+    top:0;
+    left:0;
+    background: #00000086;
+    height: 78%;
+    width: 100%;
+    color: #fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: 700;
+    mix-blend-mode:multiply;
+}
+.container
+{
+    padding-top: 50%;
+    padding-bottom:10%;
+    width:1300px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:5em;
+    justify-content:space-between ;
+    
+  
+}
+
+.card
+{
+    position:relative;
+    left:-3.6%;
+    width: 300px;
+    height:370px;
+    
+    transition: 0.3s ease-out;
+    box-shadow: 0.3px 0px rgba(80, 74, 74, 0.7);
+}
+ .card .imgbox 
+ {
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    
+ }
+ .card .imgbox img
+ {
+    position: absolute;
+    top:0;
+    left:0;
+    width:130%;
+    height:80%;
+    display: block;
+    transition: 0.5s;
+ }
+ 
+
+ .card .content
+ {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 130%;
+    height: 80px;
+    padding: 12px;
+    background:#252424df;
+    transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
+    box-sizing: border-box;
+    overflow: hidden;
+ } 
+ 
+ .card:hover .content
+ {
+    width:130%;
+    height:80%;
+    left:0;
+    bottom:0;
+ }
+ .content p
+ {
+   margin: 10px 0 0;
+   padding: 1em 1em;
+   transform: translateY(2em);
+   line-height: 1.3em;
+   transition: 0.3s;
+   text-align: center;
+   opacity: 0;
+   color:white;
+   font-family: 'M PLUS 1p', sans-serif;
+   font-size: medium;
+}
+
+.card:hover .content p
+{
+   transform: translateY(0);
+   opacity: 1;
+}
+
+h2
+{
+   text-align: center;
+   color:white;
+   font-family: 'PT Sans', sans-serif;
+   
+}
+.card:hover 
+{
+   box-shadow: 0 0 5em rgba(206, 202, 202, 0.278);
+}
+
+
+@media (max-width: 1235px) {
+   .hero video{
+      height: 80%;
+      align-items: start;
+      top:-25%;
+      transform: (-25%);
+   }
+
+ 
+ .text-box  {
+   height: 30%;
+   width:100%;
+   font-size: 30px;
+   font-weight: 300;
+
+ }
+ .container
+ {
+   padding-top: 80%;
+   padding-left: 10%;
+   padding-right: 10%;
+ }
+}
+
+
+
+
